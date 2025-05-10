@@ -2991,17 +2991,17 @@ body .bg-filter-close.active {
 }
 .nav-direct-links a {
   overflow: hidden;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 .nav-direct-links i,
 .nav-direct-links span {
-  vertical-align: middle;
+  heidht: 100%;
 }
 .nav-direct-links i {
   *display: inline;
   zoom: 1;
   width: 52px;
-  line-height: 52px;
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -4735,16 +4735,16 @@ a[href="#container"] {
   color: #fff;
 }
 .editor_reset * {
-  all: revert;/* css 기본값으로 설정 */
+  all: revert;
   line-height: 1.8;
 }
 .editor_reset table {
-  max-width: fit-content;/* table 너비가 큰 경우, 화면 넘어가지 않게 처리 */
+  max-width: fit-content;
 }
 .editor_reset img,
 .editor_reset video {
-  height: auto !important;/* 이미지 높이를 너비에 맞춤 */
-  object-fit: contain;/* 이미지가 잘리지 않게 처리 */
+  height: auto !important;
+  object-fit: contain;
 }
 .page-index {
   overflow-x: hidden;
