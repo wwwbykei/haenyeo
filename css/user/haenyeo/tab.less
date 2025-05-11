@@ -1,0 +1,33 @@
+// main: "style.less"
+
+// Tabs
+.tab-content{
+    > .tab-pane{.hidden}
+    > .active{.block}
+}
+
+.wrap-scroll-x{
+	.nav-tab-underline{table-layout:auto;.mtb(0)}	
+}
+
+.category-main{overflow-x:auto;.rel;.b;.radius(@border-radius-base);.bg(@bg-light);
+	> ul{.dp-table;table-layout:fixed;.w(840px);
+		@media (min-width:897px){.w-full}
+		> li{.valign(bottom);
+			&.active{.bg(@color-primary-light);
+				> a{
+					i{.opacity(1)}
+				}
+			}
+			> a{.overh;.block;.pb(8px);.tc;
+				@media @desktop{.pb(16px)}
+				i{.material-symbols-outlined;.block;.w-full;.mtb(12px,8px);.fs(24);.tc;.c(#000);.opacity(.5);
+					@media @desktop{.h(32px);.mtb(16px,12px);.fs(32)}
+				}
+				span{.in-block;.fs(12);
+					@media @desktop{.fs(16)}
+				}
+			}
+		}
+	}
+}

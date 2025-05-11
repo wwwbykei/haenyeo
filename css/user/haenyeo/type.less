@@ -1,0 +1,18 @@
+// main: "style.less"
+
+.hyperlink{
+	&:hover{text-decoration:underline}
+	&:not(.link-blue){
+		&:hover{.c(@text-dark)}
+	}
+	&.link-blue{.c(@link-color)}
+	&.tu{
+		&:hover{.c(@color-primary)}
+	}
+}
+.title-category{box-sizing:border-box;padding:12px 16px;border-radius:@border-radius-base;font-size:16px;font-weight:bold;
+	@media @desktop{padding:20px;font-size:20px}
+	&.depth-1{background:@beige}
+	&.depth-2{background:@color-primary-medium;color:#fff}
+	&.depth-3{background:@color-primary;color:#fff}
+}
